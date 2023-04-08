@@ -1,0 +1,117 @@
+.header {
+    min-height: 100vh;
+    background-color: #c5e9f5;
+    background-image: url(./../img/header/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    .header__top {
+        padding: 44px 0;
+        margin-bottom: 126px;
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+    
+            .nav__list{
+                display: flex;
+                align-items: center;
+                column-gap: 118px;
+            }
+        }
+    }
+
+    .header__content {
+        max-width: 1060px;
+
+        .header__title {
+            max-width: 734px;
+            font-size: 80px;
+            font-weight: 800;
+            color: #114455;
+            margin-bottom: 50px;
+        }
+
+        .header__text {
+            font-size: 34px;
+            color: rgb(31, 31, 31, 0.7);
+            margin-bottom: 72px;
+
+            p + p {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .link {
+        font-size: 20px;
+        font-weight: 800;
+        color: #114455;
+    }
+}
+
+.btn {
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 2px;
+    padding: 10px 24px;
+    padding-right: 72px;
+
+    display: inline-block;
+    border: 1px solid #114455;
+    color: #114455;
+
+    transition: color 0.15s ease-in, background-color 0.15s ease-in;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-image: url(../../img/icons/arow-right-b.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+
+    &:hover, :focus {
+        background-color: #114455;
+        color: #fff;
+
+        &::after{
+            background-image: url(../../img/icons/arow-right-w.svg);
+        }
+    }
+
+        &--green{
+            padding: 14px 32px;
+            padding-right: 80px;
+            background-color: #114455;
+            color: #fff;
+    
+            &::after{
+                background-image: url(../../img/icons/arow-right-w.svg);
+            }
+                
+            &:hover, :focus {
+                background-color: #fff;
+                color: #114455;
+                &::after{
+                    background-image: url(../../img/icons/arow-right-b.svg);
+                }
+            }
+
+        }
+
+    &:active{
+        top: -1px;
+    }
+}
+
+
+
+
