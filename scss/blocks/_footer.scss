@@ -1,0 +1,25 @@
+.footer, a {
+    padding: 162px 0 82px;
+
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    color: rgba(31, 31, 31, 0.7);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__nav {
+    display: flex;
+    column-gap: 104px;
+    align-items: baseline;
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 25px;
+}
