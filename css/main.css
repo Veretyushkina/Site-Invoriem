@@ -156,6 +156,10 @@ body {
   display: none;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /*case section*/
 .case-studies {
   padding: 184px 0;
@@ -310,6 +314,22 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .footer, .footer a {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  .footer__row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
 @media (max-width: 640px) {
   .nav__logo {
@@ -387,11 +407,22 @@ body {
   .about__text {
     margin-bottom: 40px;
   }
+  .video {
+    overflow: hidden;
+  }
   .video__btn {
     width: 48px;
     height: 48px;
   }
   .video__picture, .video__picture img {
     width: 100%;
+  }
+  .video__object {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 1130px;
+    height: 635px;
+    vertical-align: top;
   }
 }/*# sourceMappingURL=main.css.map */

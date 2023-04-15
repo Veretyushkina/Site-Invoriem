@@ -25,9 +25,9 @@ $(document).ready(function(){
   const video = document.querySelector('#video-file');
 
   videoBtn.addEventListener('click', function (){
-        videoPicture.classList.add('none');
+        videoPicture.classList.add('hidden');
         videoWrapper.classList.remove('video-overlay');
-        videoBtn.classList.add('none');
+        videoBtn.classList.add('hidden');
 
         if (video.paused) {
             video.play()
@@ -39,7 +39,7 @@ $(document).ready(function(){
         video.play()
     } else {
         videoWrapper.classList.add('video-overlay');
-        videoBtn.classList.remove('none');
+        videoBtn.classList.remove('hidden');
         video.pause();
     }
   })
