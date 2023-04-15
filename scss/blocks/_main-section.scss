@@ -63,10 +63,6 @@
     margin-bottom: 78px;
 }
 
-.about__content {
-
-}
-
 .video {
     position: relative;
 }
@@ -80,6 +76,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba(17, 68, 85, 0.5);
+        z-index: 8;
     }
 }
 
@@ -92,13 +89,17 @@
 }
 
 .video__picture {
-position: absolute;
-left: 0;
-top: 0;
+    position: relative;
+    z-index: 7;
 }
 
 .video__object {
+    position: absolute;
+    left: 0;
+    top: 0;
+
     width: 100%;
+    height: 100%;
     vertical-align: top;
 }
 
